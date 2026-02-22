@@ -1,7 +1,7 @@
 class Sipag < Formula
   desc "Autonomous dev agent powered by Claude Code"
   homepage "https://github.com/Dorky-Robot/sipag"
-  version "2.3.0"
+  version "2.4.0"
   license "MIT"
 
   depends_on "jq"
@@ -9,11 +9,11 @@ class Sipag < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Dorky-Robot/sipag/releases/download/v2.3.0/sipag-v2.3.0-aarch64-apple-darwin.tar.gz"
-      sha256 "f0e991e279b6d562c0829e3bedaa78ea9b921f7f2c3ebed9a93310eb75890b01"
+      url "https://github.com/Dorky-Robot/sipag/releases/download/v2.4.0/sipag-v2.4.0-aarch64-apple-darwin.tar.gz"
+      sha256 "1235cefd8d4b3f75e57f14c6a3bc8c2f74e84cb3bfdc64ebd971172125b214f9"
     else
-      url "https://github.com/Dorky-Robot/sipag/releases/download/v2.3.0/sipag-v2.3.0-x86_64-apple-darwin.tar.gz"
-      sha256 "c2c699bc32f4a6a2deb5730d237908796f2e4d8bf421a3ad85868d09df1e3962"
+      url "https://github.com/Dorky-Robot/sipag/releases/download/v2.4.0/sipag-v2.4.0-x86_64-apple-darwin.tar.gz"
+      sha256 "2c3a26a71cc539d3c008861080092ab6d88be3f6e6089c15caba17f37f14a397"
     end
   end
 
