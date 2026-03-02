@@ -1,18 +1,18 @@
 class Abot < Formula
   desc "AI-native spatial terminal interface"
   homepage "https://github.com/dorky-robot/abot"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/dorky-robot/abot/releases/download/v0.1.0/abot-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "fe00b64479ff5ec55ab97acca16b096d3442002f79fe8407c61d9cca6c51e0af"
+      url "https://github.com/dorky-robot/abot/releases/download/v0.2.0/abot-v0.2.0-aarch64-apple-darwin.tar.gz"
+      sha256 "c029b816dcf83125a7c91619df64e67d730dae3a1cdcc63bc6337f9e149c3c57"
     end
 
     on_intel do
-      url "https://github.com/dorky-robot/abot/releases/download/v0.1.0/abot-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "5e58738989b3200f2bc94df18f35827dd44ad323897e56d902fcf1c7f1131529"
+      url "https://github.com/dorky-robot/abot/releases/download/v0.2.0/abot-v0.2.0-x86_64-apple-darwin.tar.gz"
+      sha256 "8a02022ecc23f96612141d355c292ce65547c28929f1c3defda226feec61c9c3"
     end
   end
 
