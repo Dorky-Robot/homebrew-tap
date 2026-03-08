@@ -1,16 +1,16 @@
 class Tunnels < Formula
   desc "k9s-style TUI for managing cloudflared tunnels and local services"
   homepage "https://github.com/Dorky-Robot/tunnels"
-  version "0.5.3"
+  version "0.5.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Dorky-Robot/tunnels/releases/download/v0.5.3/tunnels-v0.5.3-aarch64-apple-darwin.tar.gz"
-      sha256 "1da09534e0c295a0def9a031dc08482dee48579e79e0e0befb1adbbbc223a513"
+      url "https://github.com/Dorky-Robot/tunnels/releases/download/v0.5.4/tunnels-v0.5.4-aarch64-apple-darwin.tar.gz"
+      sha256 "9e82f094ab421fa79b5f3af44342aa186f4959c9d4272797f4a0c84a7045b60f"
     elsif Hardware::CPU.intel?
-      url "https://github.com/Dorky-Robot/tunnels/releases/download/v0.5.3/tunnels-v0.5.3-x86_64-apple-darwin.tar.gz"
-      sha256 "ac0ec3afe46ac4829383f4cfc433bb68897393403e479bdbf933da50dbce01ad"
+      url "https://github.com/Dorky-Robot/tunnels/releases/download/v0.5.4/tunnels-v0.5.4-x86_64-apple-darwin.tar.gz"
+      sha256 "1c6eeb4ecf9eb71ef2e1564b993a6891884306dbb4a32845db370d6425882cf5"
     end
   end
 
