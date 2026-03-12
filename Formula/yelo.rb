@@ -2,7 +2,7 @@ class Yelo < Formula
   desc "FTP-style CLI and TUI for Amazon S3 and Glacier"
   homepage "https://github.com/Dorky-Robot/yelo"
   url "https://github.com/Dorky-Robot/yelo/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "133de59561e5bd1c7a56dac66df64122489f19c0a7653adf0f13480299c093f8"
+  sha256 "74099efceacd697d8a420f1316b7c4cc7df08196f8b8e8a33681933a9c56ed65"
   license "MIT"
 
   depends_on "go" => :build
