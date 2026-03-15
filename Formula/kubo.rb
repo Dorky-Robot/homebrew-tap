@@ -1,30 +1,30 @@
 class Kubo < Formula
   desc "Isolated dev environments in Docker"
   homepage "https://github.com/Dorky-Robot/kubo"
-  version "0.2.3"
+  version "0.2.4"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Dorky-Robot/kubo/releases/download/v0.2.3/kubo-v0.2.3-aarch64-apple-darwin.tar.gz"
-      sha256 "999130bfcad9d4a4f4a7f46f13f666e98194c865c177ef61e23725c8ea6d84fb"
+      url "https://github.com/Dorky-Robot/kubo/releases/download/v0.2.4/kubo-v0.2.4-aarch64-apple-darwin.tar.gz"
+      sha256 "be501ae2ab78167cc5f6429197f5fc32ac87a1f855a19678f693a3c9f6bf09f4"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/kubo/releases/download/v0.2.3/kubo-v0.2.3-x86_64-apple-darwin.tar.gz"
-      sha256 "f77c72e83466d8a63793f250fc3d5dd9435d8b74e86491c2a831a6e7abeaab27"
+      url "https://github.com/Dorky-Robot/kubo/releases/download/v0.2.4/kubo-v0.2.4-x86_64-apple-darwin.tar.gz"
+      sha256 "32d25e99b0a888ea8a66fd8a4a2e1694c06365d9ca42645221442645f6c01665"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Dorky-Robot/kubo/releases/download/v0.2.3/kubo-v0.2.3-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "544e79b6f4fa895c93488cc85408c77d32f9aab396f47d678377865c88a0182e"
+      url "https://github.com/Dorky-Robot/kubo/releases/download/v0.2.4/kubo-v0.2.4-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "1c642796f3901257b2eafb8d2018297c54f9f4f130415eb0643e51a4f94c6777"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/kubo/releases/download/v0.2.3/kubo-v0.2.3-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d7f3483526aae4887c7dc827750519baa926e61ae7ca8356a5d1208e8d822ab3"
+      url "https://github.com/Dorky-Robot/kubo/releases/download/v0.2.4/kubo-v0.2.4-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "221cbc5f6e4e66671e512daa231832721bee265aec8f1b25aabb594aa3c41193"
     end
   end
 
