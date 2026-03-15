@@ -1,32 +1,32 @@
 class Sabihin < Formula
   desc "Natural language to shell commands, powered by local AI"
   homepage "https://github.com/Dorky-Robot/sabihin"
-  version "0.1.0"
+  version "0.25.1"
   license "MIT"
 
   depends_on "ollama"
 
   on_macos do
     on_arm do
-      url "https://github.com/Dorky-Robot/sabihin/releases/download/v0.1.0/sabihin-aarch64-apple-darwin.tar.gz"
-      sha256 "0fb39e6a7fae40475fb5ae0beab071a8e00e9dee297effa6f04d0a9aca83ee26"
+      url "https://github.com/Dorky-Robot/sabihin/releases/download/v0.25.1/sabihin-aarch64-apple-darwin.tar.gz"
+      sha256 "1a9ab1a2a6a3d881da336f20a63b0260ace1a3c08eba286ee0c2b58119ee7ee1"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/sabihin/releases/download/v0.1.0/sabihin-x86_64-apple-darwin.tar.gz"
-      sha256 "b77e77760d5ea3694ea5f007e2c86d41f2bccde8371709b9f8cb8a817319a1d6"
+      url "https://github.com/Dorky-Robot/sabihin/releases/download/v0.25.1/sabihin-x86_64-apple-darwin.tar.gz"
+      sha256 "5b3738c5410674d7c17283a2357e6e6b5a26c9faed8f28ba93c13d462dd40b1b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Dorky-Robot/sabihin/releases/download/v0.1.0/sabihin-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "c3e67d80aa656dfc0590486426201a662c86ab20b692fc68fc9bb5226ad191f7"
+      url "https://github.com/Dorky-Robot/sabihin/releases/download/v0.25.1/sabihin-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "db9ef4abe1bd805e389acfdde028a3c4485a8036be496e989d92a27d088ac0fa"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/sabihin/releases/download/v0.1.0/sabihin-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "40d491236b5b8ff34b0085feb4d64487c24d5eb012539e6b84a6db4c106c421a"
+      url "https://github.com/Dorky-Robot/sabihin/releases/download/v0.25.1/sabihin-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f01e6c49d751c508f9b5c9c0a1798528d7f133b27f1e37febb197a97031d65f8"
     end
   end
 
