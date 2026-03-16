@@ -1,30 +1,30 @@
 class Yelo < Formula
   desc "FTP-style CLI and TUI for Amazon S3 and Glacier"
   homepage "https://github.com/Dorky-Robot/yelo"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Dorky-Robot/yelo/releases/download/v0.6.0/yelo-aarch64-apple-darwin.tar.gz"
-      sha256 "111a5fac4af3e9720a52cf43e21cef9f917d71c84dc5f0d138e69606b28dec54"
+      url "https://github.com/Dorky-Robot/yelo/releases/download/v0.6.1/yelo-aarch64-apple-darwin.tar.gz"
+      sha256 "94b58b3f644e47b7296389bda7bbbc2518cca2c2aed8df695651243bbdd7ec83"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/yelo/releases/download/v0.6.0/yelo-x86_64-apple-darwin.tar.gz"
-      sha256 "c6ef2a90bb0dedc94a2846a2fd06a6a2812fe456148819c199972f799bbee94d"
+      url "https://github.com/Dorky-Robot/yelo/releases/download/v0.6.1/yelo-x86_64-apple-darwin.tar.gz"
+      sha256 "ef8d7c1ae2f7d280f1fe408a9d2fa4dd59885363ee2ad1be3abfa16d4d11e13a"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Dorky-Robot/yelo/releases/download/v0.6.0/yelo-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "bede6e8260cdffbf4253581f88c0f7e3796ab5adf40d9d7e3b7bf6d82b04ddce"
+      url "https://github.com/Dorky-Robot/yelo/releases/download/v0.6.1/yelo-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "14f104fe0e5b0b0cbaf1d5d946e4ff8d64a5e045758032bb942f26fa429f0065"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/yelo/releases/download/v0.6.0/yelo-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "16ab3e517975eb8dee8c44ce3f0ee7b9cff432061f4176c1164aca0add875154"
+      url "https://github.com/Dorky-Robot/yelo/releases/download/v0.6.1/yelo-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "a147401cf269a20ad73a0cb057bc0afb2f71d333b65b53a0163b2d8b2d9aa8ec"
     end
   end
 
