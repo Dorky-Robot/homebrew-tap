@@ -7,10 +7,37 @@ class Katulong < Formula
 
   depends_on "node"
 
+  depends_on "tmux"
+
   def install
     system "npm", "install", "--omit=dev"
     libexec.install Dir["*"]
     bin.install_symlink libexec/"bin/katulong"
+  end
+
+  def post_install
+    # Use the katulong CLI itself to handle the upgrade lifecycle.
+    # `katulong service restart` does launchctl unload/load if the
+    # LaunchAgent is installed; `katulong stop` sends SIGTERM otherwise.
+    # This avoids duplicating process/launchd management in Ruby.
+    katulong = bin/"katulong"
+    if (Pathname.new(Dir.home) / "Library/LaunchAgents/com.dorkyrobot.katulong.plist").exist?
+      system katulong, "service", "restart"
+    else
+      system katulong, "stop"
+    end
+  end
+
+  def caveats
+    <<~EOS
+      To auto-start katulong on login:
+        katulong service install
+
+      To restart after upgrading (if not using the service):
+        katulong start
+
+      If the service is installed, brew upgrade restarts it automatically.
+    EOS
   end
 
   test do
