@@ -1,8 +1,8 @@
 class Katulong < Formula
   desc "Self-hosted web terminal with tmux sessions and WebAuthn security"
   homepage "https://github.com/Dorky-Robot/katulong"
-  url "https://github.com/Dorky-Robot/katulong/archive/refs/tags/v0.29.1.tar.gz"
-  sha256 "36515795929f1d2de2c76219da3fabbfd8773c25893541a2aa6d0cfdc26d256c"
+  url "https://github.com/Dorky-Robot/katulong/archive/refs/tags/v0.30.0.tar.gz"
+  sha256 "e352660c0dd382814dac8e84651792bb47c6e103fa7cc2094e2ee6cb88bb38cb"
   license "MIT"
 
   depends_on "node"
@@ -18,13 +18,14 @@ class Katulong < Formula
   def post_install
     # Use the katulong CLI itself to handle the upgrade lifecycle.
     # `katulong service restart` does launchctl unload/load if the
-    # LaunchAgent is installed; `katulong stop` sends SIGTERM otherwise.
-    # This avoids duplicating process/launchd management in Ruby.
+    # LaunchAgent is installed; `katulong restart` does stop+start
+    # otherwise. This avoids duplicating process/launchd management
+    # in Ruby.
     katulong = bin/"katulong"
     if (Pathname.new(Dir.home) / "Library/LaunchAgents/com.dorkyrobot.katulong.plist").exist?
       system katulong, "service", "restart"
     else
-      system katulong, "stop"
+      system katulong, "restart"
     end
   end
 
