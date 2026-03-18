@@ -7,24 +7,24 @@ class Kubo < Formula
   on_macos do
     on_arm do
       url "https://github.com/Dorky-Robot/kubo/releases/download/v0.5.0/kubo-v0.5.0-aarch64-apple-darwin.tar.gz"
-      sha256 "f97773989682efae9b5a12bac9cb610f5d6846f56bf0297231ef378d37164bd4"
+      sha256 "a0ffd34d108d95d2f8f33a4d3754fedf7d9009de1c551f042d6fcd0b81459730"
     end
 
     on_intel do
       url "https://github.com/Dorky-Robot/kubo/releases/download/v0.5.0/kubo-v0.5.0-x86_64-apple-darwin.tar.gz"
-      sha256 "79f570f020d20055d074a7e0127420c9ee9344dcba9d3656cbb0eeeaade14f8d"
+      sha256 "7b1b031bdd26b8fdd07ab252085181e082a34f2f66eff07c5ea40930f96075f7"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/Dorky-Robot/kubo/releases/download/v0.5.0/kubo-v0.5.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "97f13bdc16f8a90d54d92b5fcb515b620c980d9feda94128fcc0c42950fe09ec"
+      sha256 "90914955a15ad84f8699171d36c764eab1f699f1fc7d8650ea7badfd784c705e"
     end
 
     on_intel do
       url "https://github.com/Dorky-Robot/kubo/releases/download/v0.5.0/kubo-v0.5.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "0bf2e3f4fb2615dc6faf5cba1ef9e87b10899e89d1748367ea947426eda2e75d"
+      sha256 "f5cc945e4cdb35dc6e5493fa2367d0287851b0f0e892b854a01aca09bf95ef2a"
     end
   end
 
