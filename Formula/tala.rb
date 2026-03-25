@@ -2,7 +2,7 @@ class Tala < Formula
   desc "Git-backed markdown notes with WYSIWYG editor and version tree"
   homepage "https://github.com/Dorky-Robot/tala"
   url "https://github.com/Dorky-Robot/tala/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  sha256 "6a58d5e0963960c9f9f6ddeecf02f1649e9ecf851ca384ddba5c28c4cc6b95f8"
   license "MIT"
 
   depends_on "elixir"
