@@ -1,25 +1,25 @@
 class Diwa < Formula
   desc "Semantic git history index — the deeper meaning behind your codebase"
   homepage "https://github.com/Dorky-Robot/diwa"
-  version "0.3.5"
+  version "0.3.3"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.3.5/diwa-aarch64-apple-darwin.tar.gz"
-      sha256 "a8f039ff6ec921177b1f17ee85b57aff897279bf828f07f4807bfabf6feaa3fc"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.3.3/diwa-aarch64-apple-darwin.tar.gz"
+      sha256 "7457437287c01619f168e0e63cbb056cfa3378499d1cf991e3054a806ba5b1d7"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.3.5/diwa-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6a1ab9b3c0890a8bb48835e1d6921799020834ed60ac279b97fc2a15cba0bad3"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.3.3/diwa-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "23ef404dafa59646158947723245ac096104f9b26307cbcdb9c7ef89ba0b4b31"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.3.5/diwa-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "dd1e1142b9139eabb56b115a6ffc204d7214a958b43aeeb240345d0153e361ca"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.3.3/diwa-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "0a58cc5d6484bda239576ad46e41d0a4185d79c6d7698120d69140b3bac1a0ea"
     end
   end
 
