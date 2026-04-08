@@ -4,6 +4,7 @@ class Tala < Formula
   url "https://github.com/Dorky-Robot/tala/archive/refs/tags/v1.0.0.tar.gz"
   sha256 "6a58d5e0963960c9f9f6ddeecf02f1649e9ecf851ca384ddba5c28c4cc6b95f8"
   license "MIT"
+  head "https://github.com/Dorky-Robot/tala.git", branch: "main"
 
   depends_on "elixir"
   depends_on "git"
