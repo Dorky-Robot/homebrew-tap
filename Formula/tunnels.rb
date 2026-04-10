@@ -7,12 +7,12 @@ class Tunnels < Formula
   on_macos do
     on_arm do
       url "https://github.com/Dorky-Robot/tunnels/releases/download/v0.9.1/tunnels-v0.9.1-aarch64-apple-darwin.tar.gz"
-      sha256 "5da0e08d7283ba38b7a7bdb3707ac34a57dc757b751e08816e7f3ddbe269ca01"
+      sha256 "4e894bb5d86dae66e2e8a382e990a84035f84130ecd3f172910fc9dd822837f5"
     end
 
     on_intel do
       url "https://github.com/Dorky-Robot/tunnels/releases/download/v0.9.1/tunnels-v0.9.1-x86_64-apple-darwin.tar.gz"
-      sha256 "PLACEHOLDER_NEEDS_INTEL_BUILD"
+      sha256 "988c39fdc9f6ed1f18ceb4758e1905128b6e1b7b224cda8d4eb209035ffd963a"
     end
   end
 
