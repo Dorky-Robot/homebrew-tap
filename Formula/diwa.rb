@@ -1,25 +1,33 @@
 class Diwa < Formula
   desc "Semantic git history index — the deeper meaning behind your codebase"
   homepage "https://github.com/Dorky-Robot/diwa"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.4.0/diwa-aarch64-apple-darwin.tar.gz"
-      sha256 "7bf0e4a83d4fb49baa9ba16d718896169f7695f0b40b0a415006cc6df18e5415"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.4.1/diwa-aarch64-apple-darwin.tar.gz"
+      sha256 "cda7b57bc2cc8e3335d6719aad16950a64e1ba355ad9415193ade2439008465e"
+    end
+
+    on_intel do
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.4.1/diwa-x86_64-apple-darwin.tar.gz"
+      sha256 "2ee3891e74d733f3e3207a4fcf6a79646ac050b4e4f891cf477495a5e308b249"
+      # Built with load-dynamic so ort-sys doesn't need a prebuilt.
+      # Binary loads libonnxruntime.dylib from /usr/local/lib.
+      depends_on "onnxruntime"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.4.0/diwa-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "de6e70759363f32837db3dbb29b721883ccef41a4b0a45f6bc3795ed083fa91b"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.4.1/diwa-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "61357b8ea7c2024cc0415f9ec79f60383fef93ba0c5dc54f71377c9bc891f3f2"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.4.0/diwa-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f68661aa0dc4499a0e0296eac65363850eeced9e7fbdb5dac10009b397783d33"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.4.1/diwa-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b538e0496187741bde37787970207f49b6d9e4b8b4960c8af7671e0a162aa397"
     end
   end
 
