@@ -1,18 +1,18 @@
 class Diwa < Formula
   desc "Semantic git history index — the deeper meaning behind your codebase"
   homepage "https://github.com/Dorky-Robot/diwa"
-  version "0.4.2"
+  version "0.4.3"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.4.2/diwa-aarch64-apple-darwin.tar.gz"
-      sha256 "f9130f890e9a272c77af760bc372d884ac241393cbc20c14fc0d9760b03ff936"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.4.3/diwa-aarch64-apple-darwin.tar.gz"
+      sha256 "33fa2ed09971bf25ec3ed477d84e2b9e25dc66e40a955201b3aa929fef2c81e2"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.4.2/diwa-x86_64-apple-darwin.tar.gz"
-      sha256 "ec6f78c64f47b2d6cceb83316a9a715e1d42308845234a85a076e0137df2dbb6"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.4.3/diwa-x86_64-apple-darwin.tar.gz"
+      sha256 "79d7120017d12a605785a7cb106b97d4b5887f7d9164bb9e43a93ddfd159ed9c"
       # Built with load-dynamic so ort-sys doesn't need a prebuilt.
       # Binary loads libonnxruntime.dylib from /usr/local/lib.
       depends_on "onnxruntime"
@@ -21,13 +21,13 @@ class Diwa < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.4.2/diwa-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "c46ab01ce25e5510412b819001dc00c780fe44b7d9201b3f5e4e5c614a347014"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.4.3/diwa-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "8fa76788030e8cea223f8575ca44c00ceed22c0136eb981902504073a2619426"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.4.2/diwa-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "528a4541fc601b97b49f15131751e938455262ad09fddfd3dedcafc66f517bcc"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.4.3/diwa-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "1d6f5438faa7701251c2f233cc9aeccabfe4cc404a697130e79260bd21c4f69b"
     end
   end
 
