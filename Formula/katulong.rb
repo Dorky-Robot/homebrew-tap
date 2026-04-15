@@ -1,8 +1,8 @@
 class Katulong < Formula
   desc "Self-hosted web terminal with tmux sessions and WebAuthn security"
   homepage "https://github.com/Dorky-Robot/katulong"
-  url "https://github.com/Dorky-Robot/katulong/archive/refs/tags/v0.55.9.tar.gz"
-  sha256 "702683435d675a43616498fd9a54494ca2a32c7b7730e55147aae9fe4e3fbf8a"
+  url "https://github.com/Dorky-Robot/katulong/archive/refs/tags/v0.55.10.tar.gz"
+  sha256 "f654004d67a5a67f41763d11cbfb3eee2ebcd6e6eebb85dae3c60802e434dc19"
   license "MIT"
 
   depends_on "node"
@@ -53,6 +53,12 @@ class Katulong < Formula
         katulong start
 
       If the service is installed, brew upgrade restarts it automatically.
+
+      Upgrading from a pre-v0.56 build? The pub/sub directory may contain
+      stale topics left behind by retired releases (high-volume PTY output
+      streams, and pre-thin-event Claude session logs). Run:
+        katulong topics purge             # preview (dry-run, default)
+        katulong topics purge --yes       # delete the previewed topics
     EOS
   end
 
