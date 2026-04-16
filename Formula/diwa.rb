@@ -1,18 +1,18 @@
 class Diwa < Formula
   desc "Semantic git history index — the deeper meaning behind your codebase"
   homepage "https://github.com/Dorky-Robot/diwa"
-  version "0.4.7"
+  version "0.4.8"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.4.7/diwa-aarch64-apple-darwin.tar.gz"
-      sha256 "2268543778c70c198d6e17b2261e9177d6c2982c36698a6302422d825296a78a"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.4.8/diwa-aarch64-apple-darwin.tar.gz"
+      sha256 "6030315222254049eceaa1fb1815702290e84e9b6f1f3943d9b0a7801a6bd9e0"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.4.7/diwa-x86_64-apple-darwin.tar.gz"
-      sha256 "74dd96825999d7eeb3285907830ad513a47d68914ea23f44126ecb3bbd94d40c"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.4.8/diwa-x86_64-apple-darwin.tar.gz"
+      sha256 "759ac52ffc64df72d270b9292fb0e0a2781c9ef3db15a877f2074c422868db88"
       # Built with load-dynamic so ort-sys doesn't need a prebuilt.
       # Binary loads libonnxruntime.dylib from /usr/local/lib.
       depends_on "onnxruntime"
@@ -21,13 +21,13 @@ class Diwa < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.4.7/diwa-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "2a91531752ad3ca8ffa6c8cf7fd754de2e0d3b8d2cae65ccfe55da700739a22d"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.4.8/diwa-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "18d26f6b7d1fea64f04f7bfc1643985cc4b7d31ea75e8c267f5ee5e9e3faae49"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.4.7/diwa-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "4644439b80b0a611cc01501f631c055d591c27a065c8cf3ca1225204281c7d75"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.4.8/diwa-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b702d6d7a1ffea62999b400c8cac4ff0e18bd97b0355cb616d2e42d501601d78"
     end
   end
 
