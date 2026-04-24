@@ -1,13 +1,13 @@
 class Humos < Formula
   desc "Personal OS: sovereign binaries that own your data via filesystem contracts"
   homepage "https://github.com/Dorky-Robot/humOS"
-  version "0.1.0"
+  version "0.1.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/Dorky-Robot/humOS/releases/download/v0.1.0/humos-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "48d218d5e55eb622395ce405431a9bca8cec57b022c4dee96cb4973ccfe24fc4"
+      url "https://github.com/Dorky-Robot/humOS/releases/download/v0.1.1/humos-v0.1.1-aarch64-apple-darwin.tar.gz"
+      sha256 "1b0f4938c56ef36d0f8abf3907fda279628b1c9241e2e56407c228f373f229f8"
     end
   end
 
