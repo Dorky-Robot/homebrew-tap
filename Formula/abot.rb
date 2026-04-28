@@ -1,18 +1,13 @@
 class Abot < Formula
-  desc "AI-native spatial terminal interface"
-  homepage "https://github.com/dorky-robot/abot"
-  version "0.2.0"
-  license "MIT"
+  desc "Headless CLI for AI agent identities — git repos with a model attached"
+  homepage "https://github.com/Dorky-Robot/abot"
+  version "1.0.0"
+  license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/dorky-robot/abot/releases/download/v0.2.0/abot-v0.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "c029b816dcf83125a7c91619df64e67d730dae3a1cdcc63bc6337f9e149c3c57"
-    end
-
-    on_intel do
-      url "https://github.com/dorky-robot/abot/releases/download/v0.2.0/abot-v0.2.0-x86_64-apple-darwin.tar.gz"
-      sha256 "8a02022ecc23f96612141d355c292ce65547c28929f1c3defda226feec61c9c3"
+      url "https://github.com/Dorky-Robot/abot/releases/download/v1.0.0/abot-v1.0.0-aarch64-apple-darwin.tar.gz"
+      sha256 "500129329862618cdf645a2829bea37f1d97fb6e7ef6cf71c279bff212bd833b"
     end
   end
 
@@ -20,20 +15,20 @@ class Abot < Formula
     bin.install "abot"
   end
 
-  def post_install
-    ohai "abot installed! Run `abot start` to launch."
-    ohai "If abot is already running, use `abot update` for zero-downtime upgrade."
-  end
+  def caveats
+    <<~EOS
+      Quick start:
+        echo "you@example.com" > ~/.abot/commit_email
+        echo "Your Name"       > ~/.abot/commit_name
+        abot create alice
+        echo "say hi" | abot run alice
 
-  service do
-    run [opt_bin/"abot", "start"]
-    keep_alive true
-    log_path var/"log/abot.log"
-    error_log_path var/"log/abot.log"
-    working_dir HOMEBREW_PREFIX
+      Optional: install Ollama (https://ollama.com) and pull a chat
+      model (e.g. `ollama pull gemma4:31b`) to enable `abot run`.
+    EOS
   end
 
   test do
-    assert_match "abot", shell_output("#{bin}/abot --help")
+    assert_match "create", shell_output("#{bin}/abot --help")
   end
 end
