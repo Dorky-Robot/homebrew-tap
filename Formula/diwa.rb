@@ -1,18 +1,18 @@
 class Diwa < Formula
   desc "Semantic git history index — the deeper meaning behind your codebase"
   homepage "https://github.com/Dorky-Robot/diwa"
-  version "0.5.4"
+  version "0.5.5"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.4/diwa-aarch64-apple-darwin.tar.gz"
-      sha256 "b87324c6d5ed90d1146590251877867f9cab51345d6d81d692ce2df101431448"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.5/diwa-aarch64-apple-darwin.tar.gz"
+      sha256 "05645063123186a94050c733a126f06ae2187bc2ac69806093980ed0b5386975"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.4/diwa-x86_64-apple-darwin.tar.gz"
-      sha256 "8be4c0b9b28782a2ce42f7a7eb616d383abd58d218871b41c3b5d4d415610edc"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.5/diwa-x86_64-apple-darwin.tar.gz"
+      sha256 "35a3580a470e994d1825221a347f191d231d9816409db2ddb9908eb28d2ab73c"
       # Built with load-dynamic so ort-sys doesn't need a prebuilt.
       # Binary loads libonnxruntime.dylib from /usr/local/lib.
       depends_on "onnxruntime"
@@ -21,13 +21,13 @@ class Diwa < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.4/diwa-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "652b304c6ccc4447f49f7a8ff5b4a854247b478c823c16038de97e99e7144df0"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.5/diwa-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "9fc9c2b11f591bbd03b6a63f3e00a373fd30160536614b7c1e4ec6b5b18f9fd5"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.4/diwa-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "c44d744f7c37367bfa99b15e70541c839e78a06fcd9bed2292a5d8f8e3f42e11"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.5/diwa-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b56818afa594607c5af27b7d3d78cd9adf2fad4875be42766142e95a8bc010de"
     end
   end
 
