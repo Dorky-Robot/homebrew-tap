@@ -1,18 +1,18 @@
 class Diwa < Formula
   desc "Semantic git history index — the deeper meaning behind your codebase"
   homepage "https://github.com/Dorky-Robot/diwa"
-  version "0.5.7"
+  version "0.5.8"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.7/diwa-aarch64-apple-darwin.tar.gz"
-      sha256 "b7a3891d1c74e45bb1876a0c9f5790fe1f110eaeb73159f8be712b07e7bc0a62"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.8/diwa-aarch64-apple-darwin.tar.gz"
+      sha256 "ee51dc33d54a9bfc926f928fd999622bfbd370f5cb4ea85aa37131185f5a22d2"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.7/diwa-x86_64-apple-darwin.tar.gz"
-      sha256 "33a8b3d0dd5b8fdb4e7b2cb076392d4bf50699cd57245371c567781380f4ce59"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.8/diwa-x86_64-apple-darwin.tar.gz"
+      sha256 "611a44f5db36d95c700463941659d472ca0297a5d93f963c8e322153a8e59b97"
       # Built with load-dynamic so ort-sys doesn't need a prebuilt.
       # Binary loads libonnxruntime.dylib from /usr/local/lib.
       depends_on "onnxruntime"
@@ -21,13 +21,13 @@ class Diwa < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.7/diwa-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8f85d1de89cceca7d3e62348076b65f8c6667a6577b2307b794f23ab3ef20098"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.8/diwa-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "789d5ae3b37b15436fc2145d186096c8ce7a02a6e5721b986794c0f2d8f1d1b2"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.7/diwa-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "8e3b8ffc593685f6144b97caa17577b37cf7985fea774289294604450cd20886"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.8/diwa-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "26159e6d7c38a89aa131babe1e9c9ef89aee8dc02d3a7aa540c8f4b38b7566a4"
     end
   end
 
