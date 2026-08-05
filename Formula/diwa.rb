@@ -1,18 +1,18 @@
 class Diwa < Formula
   desc "Semantic git history index — the deeper meaning behind your codebase"
   homepage "https://github.com/Dorky-Robot/diwa"
-  version "0.5.6"
+  version "0.5.7"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.6/diwa-aarch64-apple-darwin.tar.gz"
-      sha256 "6df3dd5c3526f3b723db69698d2b520fabc82687b5d86a612f99d8a5daf30b0b"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.7/diwa-aarch64-apple-darwin.tar.gz"
+      sha256 "b7a3891d1c74e45bb1876a0c9f5790fe1f110eaeb73159f8be712b07e7bc0a62"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.6/diwa-x86_64-apple-darwin.tar.gz"
-      sha256 "e3130deb0c3ed2065ca7454914529391342582fb84c9637b3cdadce41a0b6f1f"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.7/diwa-x86_64-apple-darwin.tar.gz"
+      sha256 "33a8b3d0dd5b8fdb4e7b2cb076392d4bf50699cd57245371c567781380f4ce59"
       # Built with load-dynamic so ort-sys doesn't need a prebuilt.
       # Binary loads libonnxruntime.dylib from /usr/local/lib.
       depends_on "onnxruntime"
@@ -21,13 +21,13 @@ class Diwa < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.6/diwa-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6e568787086588309c5b21ecee206adb86f549a5402fb2909c23b870e545c13b"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.7/diwa-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "8f85d1de89cceca7d3e62348076b65f8c6667a6577b2307b794f23ab3ef20098"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.6/diwa-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "24e99ca0ae6dda81ef807ddb7945eaa746127699399ff2fa1b1f5a31a8a53943"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.7/diwa-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "8e3b8ffc593685f6144b97caa17577b37cf7985fea774289294604450cd20886"
     end
   end
 
