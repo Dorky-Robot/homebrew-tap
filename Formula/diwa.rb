@@ -1,18 +1,18 @@
 class Diwa < Formula
   desc "Semantic git history index — the deeper meaning behind your codebase"
   homepage "https://github.com/Dorky-Robot/diwa"
-  version "0.5.5"
+  version "0.5.6"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.5/diwa-aarch64-apple-darwin.tar.gz"
-      sha256 "05645063123186a94050c733a126f06ae2187bc2ac69806093980ed0b5386975"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.6/diwa-aarch64-apple-darwin.tar.gz"
+      sha256 "6df3dd5c3526f3b723db69698d2b520fabc82687b5d86a612f99d8a5daf30b0b"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.5/diwa-x86_64-apple-darwin.tar.gz"
-      sha256 "35a3580a470e994d1825221a347f191d231d9816409db2ddb9908eb28d2ab73c"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.6/diwa-x86_64-apple-darwin.tar.gz"
+      sha256 "e3130deb0c3ed2065ca7454914529391342582fb84c9637b3cdadce41a0b6f1f"
       # Built with load-dynamic so ort-sys doesn't need a prebuilt.
       # Binary loads libonnxruntime.dylib from /usr/local/lib.
       depends_on "onnxruntime"
@@ -21,13 +21,13 @@ class Diwa < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.5/diwa-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9fc9c2b11f591bbd03b6a63f3e00a373fd30160536614b7c1e4ec6b5b18f9fd5"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.6/diwa-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "6e568787086588309c5b21ecee206adb86f549a5402fb2909c23b870e545c13b"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.5/diwa-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b56818afa594607c5af27b7d3d78cd9adf2fad4875be42766142e95a8bc010de"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.6/diwa-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "24e99ca0ae6dda81ef807ddb7945eaa746127699399ff2fa1b1f5a31a8a53943"
     end
   end
 
