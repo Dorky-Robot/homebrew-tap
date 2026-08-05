@@ -1,18 +1,18 @@
 class Diwa < Formula
   desc "Semantic git history index — the deeper meaning behind your codebase"
   homepage "https://github.com/Dorky-Robot/diwa"
-  version "0.5.11"
+  version "0.5.12"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.11/diwa-aarch64-apple-darwin.tar.gz"
-      sha256 "2a7f0dc74d92278004e78d9b248168d8ec7a318435d55814a9fde4150902e26e"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.12/diwa-aarch64-apple-darwin.tar.gz"
+      sha256 "5f88421a38a05e3df7940f713893fe986f7ab7c43d2113619aef6b3a8e9a4cd8"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.11/diwa-x86_64-apple-darwin.tar.gz"
-      sha256 "0a06e7b8e47110350d14b4d9d33af39d71ec72e9115f2d00d6e9443d61afe9be"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.12/diwa-x86_64-apple-darwin.tar.gz"
+      sha256 "b7164015b9be9f9c3bdbdb3134188d274fdf592ddd6535261f2911262a086e83"
       # Built with load-dynamic so ort-sys doesn't need a prebuilt.
       # Binary loads libonnxruntime.dylib from /usr/local/lib.
       depends_on "onnxruntime"
@@ -21,13 +21,13 @@ class Diwa < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.11/diwa-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d55d983ba63df943ebc9b7b5dd8e21ea5cff594eb716c3f035f005b9dec542db"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.12/diwa-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ffe5afba97a4b90fbdee6f2e7ebdb1a4259c014bf09cc184d9a355882aaeeefd"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.11/diwa-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "209dede67f3f033aadd0f83777970140ef00287b64d1c8c8934e3553a72bcc8d"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.12/diwa-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "fad58106684d113658d91e9bb7b0e3165870a1f124ec2f3e810d8760ec533e13"
     end
   end
 
