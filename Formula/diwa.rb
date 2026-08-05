@@ -1,18 +1,18 @@
 class Diwa < Formula
   desc "Semantic git history index — the deeper meaning behind your codebase"
   homepage "https://github.com/Dorky-Robot/diwa"
-  version "0.5.8"
+  version "0.5.9"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.8/diwa-aarch64-apple-darwin.tar.gz"
-      sha256 "ee51dc33d54a9bfc926f928fd999622bfbd370f5cb4ea85aa37131185f5a22d2"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.9/diwa-aarch64-apple-darwin.tar.gz"
+      sha256 "d796977b1f8f287e8ba2f7a0bb4708a3b3c4cc33b1cbd0f48353c6290bebf489"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.8/diwa-x86_64-apple-darwin.tar.gz"
-      sha256 "611a44f5db36d95c700463941659d472ca0297a5d93f963c8e322153a8e59b97"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.9/diwa-x86_64-apple-darwin.tar.gz"
+      sha256 "c845cd93fcc6738316411bc817b4c7fde2c9af07974fd6eca290214410724360"
       # Built with load-dynamic so ort-sys doesn't need a prebuilt.
       # Binary loads libonnxruntime.dylib from /usr/local/lib.
       depends_on "onnxruntime"
@@ -21,13 +21,13 @@ class Diwa < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.8/diwa-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "789d5ae3b37b15436fc2145d186096c8ce7a02a6e5721b986794c0f2d8f1d1b2"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.9/diwa-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "082690fe7495ba6df48e4be31f8705d5efc545d08cb0f33bc142bcc9ff73350a"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.8/diwa-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "26159e6d7c38a89aa131babe1e9c9ef89aee8dc02d3a7aa540c8f4b38b7566a4"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.9/diwa-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ddb252b0e24cd6f83a59097191fb9f1a7c804992e1064915f961907e624ac8bf"
     end
   end
 
