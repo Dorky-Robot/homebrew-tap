@@ -1,18 +1,18 @@
 class Tunnels < Formula
   desc "Cloudflare tunnels across a fleet of Macs: a config file, a CLI and an agent"
   homepage "https://github.com/Dorky-Robot/tunnels"
-  version "0.19.0"
+  version "0.20.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/Dorky-Robot/tunnels/releases/download/v0.19.0/tunnels-v0.19.0-aarch64-apple-darwin.tar.gz"
-      sha256 "5f47a680eb0f3755130d0a6113b5690d1dc21bce06b5f95db5b1e01c92d890ab"
+      url "https://github.com/Dorky-Robot/tunnels/releases/download/v0.20.0/tunnels-v0.20.0-aarch64-apple-darwin.tar.gz"
+      sha256 "aa8d6f32ca394cc5de5c84702ccb87cc2993582ac6744b918ba3b56e02a3f001"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/tunnels/releases/download/v0.19.0/tunnels-v0.19.0-x86_64-apple-darwin.tar.gz"
-      sha256 "94db2a5a22605df4287609c6d3727e427340acca6d5e345cb86fd62b3e27804e"
+      url "https://github.com/Dorky-Robot/tunnels/releases/download/v0.20.0/tunnels-v0.20.0-x86_64-apple-darwin.tar.gz"
+      sha256 "a17a4f282cf67b86e3e022019131115ed3479aef838863861456ecfd935bda58"
     end
   end
 
