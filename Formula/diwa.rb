@@ -1,18 +1,18 @@
 class Diwa < Formula
   desc "Semantic git history index — the deeper meaning behind your codebase"
   homepage "https://github.com/Dorky-Robot/diwa"
-  version "0.5.12"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.12/diwa-aarch64-apple-darwin.tar.gz"
-      sha256 "5f88421a38a05e3df7940f713893fe986f7ab7c43d2113619aef6b3a8e9a4cd8"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.6.0/diwa-aarch64-apple-darwin.tar.gz"
+      sha256 "424996c66302c3ac2c53c8d395e695ac1f977ef15a43da9ed39e8aa2b197b300"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.12/diwa-x86_64-apple-darwin.tar.gz"
-      sha256 "b7164015b9be9f9c3bdbdb3134188d274fdf592ddd6535261f2911262a086e83"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.6.0/diwa-x86_64-apple-darwin.tar.gz"
+      sha256 "0d144573ddf14b4773a6cac488f0d4fff857f95046967e1d15aa773043f058a5"
       # Built with load-dynamic so ort-sys doesn't need a prebuilt.
       # Binary loads libonnxruntime.dylib from /usr/local/lib.
       depends_on "onnxruntime"
@@ -21,13 +21,13 @@ class Diwa < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.12/diwa-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "ffe5afba97a4b90fbdee6f2e7ebdb1a4259c014bf09cc184d9a355882aaeeefd"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.6.0/diwa-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "681099db153e45face716cbafc66ab7800b70e673e4426459af98b3b246a788a"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.5.12/diwa-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "fad58106684d113658d91e9bb7b0e3165870a1f124ec2f3e810d8760ec533e13"
+      url "https://github.com/Dorky-Robot/diwa/releases/download/v0.6.0/diwa-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b2f1e1a5fa2f03945a16c47466d08866e600d9bbb67abd8e309d7b314210d17f"
     end
   end
 
@@ -37,11 +37,8 @@ class Diwa < Formula
 
   def caveats
     <<~EOS
-      diwa upgrades auto-heal on first use: next time you run any
-      `diwa` command, hooks in registered repos get rewritten and
-      the background daemon is (re)loaded. No action needed.
-
-      Fresh install? Run `diwa init` inside a git repo to get started.
+      Index repos on this machine:   diwa add org/name && diwa daemon install
+      Or use a store on another one:  diwa remote set <ssh-host>
     EOS
   end
 
