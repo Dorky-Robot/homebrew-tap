@@ -1,30 +1,30 @@
 class Abot < Formula
   desc "CLI for a git-based ecosystem log: orient, start, land, dead-end, park"
   homepage "https://github.com/Dorky-Robot/abot"
-  version "2.2.0"
+  version "2.2.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/Dorky-Robot/abot/releases/download/v2.2.0/abot-aarch64-apple-darwin.tar.gz"
-      sha256 "ad309437a3eee8e473588918e041cc3237f1df079d781609bc43c1c8db23222c"
+      url "https://github.com/Dorky-Robot/abot/releases/download/v2.2.1/abot-aarch64-apple-darwin.tar.gz"
+      sha256 "48afc15b9d3f43673fb4fe03e3fda1ece4747c8bf26cb07ab3caa18bd196551e"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/abot/releases/download/v2.2.0/abot-x86_64-apple-darwin.tar.gz"
-      sha256 "269f491f537494843885191d4b4ecc6abbb4bec36916a97e188a2379a171b13d"
+      url "https://github.com/Dorky-Robot/abot/releases/download/v2.2.1/abot-x86_64-apple-darwin.tar.gz"
+      sha256 "6e8abbe031392298a8fdfa9ff8d8a83deb250cf58111931f22e83b963a24b0e9"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Dorky-Robot/abot/releases/download/v2.2.0/abot-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "c601f66ab2a1b6f332e431c600fb707247a4b23aea7c7d6cd1bd6fee696e3ef0"
+      url "https://github.com/Dorky-Robot/abot/releases/download/v2.2.1/abot-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "b30fe3feddfda71250c92fec97e9f315e9cf9d65e8f77550ab5c59c6bb225951"
     end
 
     on_intel do
-      url "https://github.com/Dorky-Robot/abot/releases/download/v2.2.0/abot-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "879082a2993dffed9d1a7411b8da59bb3bb113aa08e43ba9dba31c365eeb6206"
+      url "https://github.com/Dorky-Robot/abot/releases/download/v2.2.1/abot-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4c22fed60fe154c43bc6943ab91f25cd23f97b93649618437620fdce4e0c9664"
     end
   end
 
